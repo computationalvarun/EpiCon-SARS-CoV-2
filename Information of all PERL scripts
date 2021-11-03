@@ -1,0 +1,5 @@
+1: codetosplit.pl
+Uses the file text file “ProteinNameandLengthforCodetosplit.txt” to split the each fasta sequences according to protein name and filter cutoff from the multi fasta file (one sequence present in one line) like files downloaded from GISAID.
+
+2: ConservationCode1.pl
+Uses two codes “2setup_moredetails.pl” and “3Pipenew_epistat1.pl” to calculate the conservation according to variants, Host, months and strains and produces the output files for every epitope. This commands require epitope sequences file and protein sequence file (in fasta format as discussed above (output of codetosplit.pl)) where conservation of epitopes need to be calculated
