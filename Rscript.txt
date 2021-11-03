@@ -1,0 +1,77 @@
+
+
+v1 <- read.csv('<input file for neutralizing epitope B-cell epitope cordinate 1>')
+v2 <- read.csv('<input file for neutralizing epitope B-cell epitope cordinate 2>')
+z1 <- c(v1)
+z2 <- c(v2)
+z1 <- unlist(z1)
+z2 <- unlist(z2)
+plot (z1,z2)
+abline (lm(z2~z1))
+lm(z2~z1)
+
+
+
+
+
+
+
+
+v1 <- read.csv('<input file for neutralizing epitope tcell epitope cordinate 1>')
+v2 <- read.csv('<input file for neutralizing epitope tcell epitope cordinate 2>')
+t1 <- c(v1)
+t2 <- c(v2)
+t1 <- unlist(t1)
+t2 <- unlist(t2)
+plot (t1,t2)
+abline (lm(t2~t1))
+lm(t2~t1)
+
+
+
+
+
+v1 <- read.csv('<input file for neutralizing epitope cordinate 1>')
+v2 <- read.csv('<input file for neutralizing epitope cordinate 2>')
+f1 <- c(v1)
+f2 <- c(v2)
+f1 <- unlist(f1)
+f2 <- unlist(f2)
+plot (f1,f2)
+abline (lm(f2~f1))
+lm(f2~f1)
+
+
+
+
+plot (f1,f2, col ="red")
+abline (lm(z2~z1), col = "red")
+plot (t1,t2, col ="blue")
+
+abline (lm(t2~t1), col = "blue")
+
+
+plot (z1,z2, col ="yellow")
+abline (lm(z2~z1), col = "yellow")
+
+
+
+ 
+plot (z1,z2, col = "yellow", pch = 3, cex = 3)
+ par(new=TRUE)
+
+plot (t1,t2, col = "blue", pch = 4, cex = 2)
+par(new=TRUE)
+ 
+plot (f1,f2, col = "red", pch = 8, cex = 1)
+
+
+abline (lm(f2~f1), col = "red")
+abline (lm(z2~z1), col = "yellow")
+abline (lm(t2~t1), col = "blue")
+
+
+
+
+
+
